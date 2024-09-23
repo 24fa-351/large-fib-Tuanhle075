@@ -34,10 +34,6 @@ int main(int argc, char** argv){
    FILE *file_ptr;
    char str[50];
    file_ptr = fopen(argv[3], "r");
-
-   // if (NULL == file_ptr) {
-   //   printf("File can't be opened \n");
-   // }
    fgets(str, 50, file_ptr);
    fclose(file_ptr);
    int num= atoi(argv[1])+atoi(str);
